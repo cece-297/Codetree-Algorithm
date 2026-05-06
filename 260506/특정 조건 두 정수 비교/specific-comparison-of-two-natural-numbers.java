@@ -4,24 +4,9 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
-        int n;
-        int m;
-       
-        if (a<b) {
-            n = 1;
-            
-        } else {
-            n = 0;
-            
-        }
-
-          if (a==b) {
-            m = 1;
-           
-        } else {
-            m = 0;
-           
-        }
-        System.out.println(n+" "+m);
+        
+        
+        System.out.print(a<b ? 1+" " : 0+" ");
+        System.out.print(a==b ? 1 : 0);
     }
 }
