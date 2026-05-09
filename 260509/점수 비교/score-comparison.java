@@ -2,15 +2,13 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int Aa = sc.nextInt();
-        int Ab = sc.nextInt();
-        int Ba = sc.nextInt();
-        int Bb = sc.nextInt();
+        int aMath = sc.nextInt();
+        int aEng = sc.nextInt();
+        int bMath = sc.nextInt();
+        int bEng = sc.nextInt();
 
-        if ((Aa > Ba) && (Ab > Bb)) {
-            System.out.println(1);
-        } else {
-            System.out.println(0);
-        }
+        int result = (aMath > bMath && aEng > bEng) ? 1 : 0;
+        System.out.println(result);
+        sc.close();
     }
 }
