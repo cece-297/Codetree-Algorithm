@@ -7,15 +7,10 @@ public class Main {
         int b = sc.nextInt();
         int c = sc.nextInt();
 
-        int max = Math.max(a, Math.max(b,c));
-        int min = Math.min(a, Math.min(b,c));
+       int max = Math.max(a, Math.max(b, c));
+int min = Math.min(a, Math.min(b, c));
+int median = (a + b + c) - max - min;
 
-        if (a != max && a != min) {
-            System.out.println(a);
-        } else if (b != max && b != min) {
-            System.out.println(b);
-        } else {
-            System.out.println(c);
-        }
+System.out.print(median);
     }
 }
