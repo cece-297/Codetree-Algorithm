@@ -4,16 +4,15 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         String a = sc.next();
         String b = sc.next();
-        String result;
         
-        if (a.length() != b.length()) {
-            result = (a.length() > b.length() ? a : b);
-            System.out.println(result + " " + result.length());
-        } else {
-            System.out.println ("same");
-        }
+        int lenA = a.length();
+        int lenB = b.length();
 
-        
-        // Please write your code here.
+        if (lenA == lenB) {
+            System.out.println("same");
+        } else {
+            String longer = (lenA > lenB) ? a : b;
+            System.out.println(longer + " " + longer.length());
+        }
     }
 }
